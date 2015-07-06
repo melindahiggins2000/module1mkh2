@@ -1,4 +1,6 @@
 
+# lab example for downloading baltimore traffic camera data
+
 fileUrl <- "https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD"
 
 install.packages("downloader")
@@ -13,4 +15,14 @@ download(fileUrl,
 list.files()
 dateDownloaded <- date()
 dateDownloaded
+
+# reading the data
+# 2 options given below
+
+cameras = read.table("cameras.csv",
+                     header=T,
+                     sep=",")
+
+cameras2 = read.csv("cameras.csv")
+
 
