@@ -16,6 +16,17 @@ list.files()
 dateDownloaded <- date()
 dateDownloaded
 
+# i created data2 folder
+setwd("C:/SISBID_2015/module1mkh2")
+
+download(fileUrl,
+         destfile="./data2/cameras.csv")
+list.files("./data2")
+dateDownloaded <- date()
+dateDownloaded
+
+setwd("C:/SISBID_2015/module1mkh2/data")
+
 # reading the data
 # 2 options given below
 
@@ -24,5 +35,8 @@ cameras = read.table("cameras.csv",
                      sep=",")
 
 cameras2 = read.csv("cameras.csv")
+
+head(cameras)
+
 
 
