@@ -52,7 +52,7 @@ Sys.sleep(10)
 10. Add the command devtools::session_info() to this chunk and look at the output
 
 ```{r session_info}
-
+sessionInfo()
 ```
 
 
